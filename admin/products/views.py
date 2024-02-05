@@ -39,4 +39,6 @@ class ProductViewSet(viewsets.ViewSet):
         product = Product.objects.get(pk=pk)
         product.delete()
 
-        return Response(status=status.HTTP_204_NOT_FOUND)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    
+    # user's calls
